@@ -1,5 +1,3 @@
-Hash = {'A'=>'1', 'B'=>'4', 'C'=>'3' , 'D'=>'2'}
-
-Hash.keys.sort.each do |key| 
-  puts Hash[key] 
-end
+my_hash = [['a', 3],['c', 5],['d', 2], ['e', 1],['b', 4]]
+hash = my_hash.sort_by(&:last).to_h
+puts hash
